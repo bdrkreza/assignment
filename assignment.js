@@ -21,7 +21,6 @@ function megaFriend(friendname) {
     }
     return largest;
 }
-console.log(megaFriend(friendname));
 //megafriend program End
 
 // budgetCalculator program (2)
@@ -31,7 +30,7 @@ function budgetCalculator(watch, laptop, mobail) {
     return result;
 }
 let total = budgetCalculator(50, 500, 100);
-console.log(total);
+
 // budgetCalculator program End
 
 // kilometerToMeter program  (3)
@@ -41,7 +40,7 @@ function kilometerToMeter(kilometer) {
     return result;
 }
 let convert = kilometerToMeter(1);
-console.log(convert);
+
 // kilometerToMeter program End
 
 
@@ -70,6 +69,5 @@ function hotelCost(day) {
     return amount;
 }
 let days = hotelCost(11);
-console.log(days);
 
 // Hotel cost program End
