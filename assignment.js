@@ -4,24 +4,24 @@
 //megafriend program (1)
 
 // Array call
-let Friendname = [
+let friendname = [
     "rkreza",
     "mofassel",
     "monirHossian",
     "kalam"
 ];
 // function call
-function megaFriend(Friendname) {
-    let longest = Friendname[0];
+function megaFriend(friendname) {
+    let largest = friendname[0];
 
-    for (let i = 0; i < Friendname.length; i++) {
-        if (Friendname[i].length > longest.length) {
-            longest = Friendname[i];
+    for (let i = 0; i < friendname.length; i++) {
+        if (friendname[i].length > largest.length) {
+            largest = friendname[i];
         }
     }
-    return longest;
+    return largest;
 }
-console.log(megaFriend(Friendname));
+console.log(megaFriend(friendname));
 //megafriend program End
 
 // budgetCalculator program (2)
@@ -43,3 +43,33 @@ function kilometerToMeter(kilometer) {
 let convert = kilometerToMeter(1);
 console.log(convert);
 // kilometerToMeter program End
+
+
+// Hotel cost program (4)
+function hotelCost(day) {
+    let discount = 0;
+    let amount = day * 100;
+
+    if (amount < 1000) {
+        discount = 0;
+    }
+
+    if ((amount >= 1100) && (amount <= 1800)) {
+        discount = 20;
+    }
+
+    if ((amount >= 1900) && (amount <= 2300)) {
+        discount = 50;
+    }
+
+    if (amount > 2400) {
+        discount = 50;
+    }
+
+    amount = amount - ((amount * discount) / 100);
+    return amount;
+}
+let days = hotelCost(11);
+console.log(days);
+
+// Hotel cost program End
